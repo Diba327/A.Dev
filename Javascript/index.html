@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function showdesc(descnum,index) {
+	let description=["ASUS ROG Flow X13 GV301QH Gaming Laptop in BangladeshPowerful Windows ten recreation has ne'er been as versatile or moveable as within the 2-in-1 ROG Flow X13. Do additional on the come with up to the newest AMD Ryzen 7 5800HS processor and distinct NVIDIA GeForce GTX 1650 4GB GDDR6 GPU. ",
+	"Dell Latitude 7420 Laptop inBangladeshStay productive on the accompany enterprise performance using the carbon fiber 14Full HD IPS-type display and integrated Intel Iris Xe graphics ensure smooth on-screen action, while an HD webcam allows for straightforward video conferencing. Stay safe with a TPM, lock slot, webcam privacy shutter, and fingerprint reader. Furthermore, Intel vPro technology ensures easy out-of-band management.",
+	"Xiaomi Mi Game Book 15.6 FHD Gaming Laptop comes with Intel Core i7-8750H Processor, 16GB (8GB x 2) DDR4 RAM, 512GB NVMe SSD, NVIDIA GeForce GTX1060 6GB Graphics with Windows 10 Home. This laptop is featured with 15.6 Inch (16: 9) 1920 x 1080 Full HD IPS Display (142ppi) 178° Viewing Angle, 300 nits, Contrast Ratio: 800: 1, Color Gamut: 72%, 4cell Li-ion polymer battery, 55Wh, Full-size backlight keyboard, 1.8mm key process, 3nit brightness, and Front 1.0MP (Support 1280 x 720 video talking) Webcam. Here, 1 x RJ45 slot, Intel 2x2 dual antennas, support 2.4Ghz, and 5GHz; 802.11 ac, compatible with 802.11 b/g/n; and Bluetooth v5 Network & Wireless Connectivity are available. This new gaming laptop has 4 x USB 3.0 slots, 1 x HDMI slot, and also a built-in AKG Speaker/Microphone.",
+	"HP 15s-EQ1009AU Laptop in Bangladesh The HP Pavilion 15s-EQ1009AU Laptop from HP delivers high-grade graphics and processing power for gaming and multitasking, plus improved thermal cooling for overall performance and stability. Immerse yourself in the game with HP 15s-EQ1009AU Laptop a narrow bezel display and custom-tuned audio. This system balances work and play, so you can do it all. The HP Pavilion Gaming Laptop powered by a 2.6 GHz AMD Ryzen 3 3250U Processor, which allows you to run multiple applications simultaneously. If you need more power, the system can be overclocked to 3.5 GHz. The 4 GB DDR4-2400MHz SDRAM helps to ensure smooth multitasking and also allows the computer to quickly access frequently-used files and programs.",
+	"Think of the Lenovo V15 as your office manager, executing on your everyday tasks with efficiency. It will keep your business productive and your data secure, while its thinner, smaller design and narrower side bezels put a clean, professional look on your desk—or wherever you choose to use it. Its integrated firmware—Trusted Platform Module (TPM) 2.0—keeps the resulting work secure by encrypting data and passwords. This laptop’s contemporary design gives it a premium look and feel, with a slim body that travels well when you’re not in the office. We tested this laptop for reliability and durability against eight extreme conditions: shock test, vibration test, keyboard in-system test, hinge life test, fan reliability test, panel scuff test, operating temperature test, and pressure test. It’s ready for whatever conditions your business can put it through.",
+	"In the MacBook Pro 16 Laptop, you’ll get there faster than ever with high‑performance processors and memory, advanced graphics, blazing‑fast storage, and immersive stereo speakers, all-day battery life, and the power of macOS, all in a portable, compact design.  Apple MacBook Pro 16 Also featuring the Magic Keyboard with a redesigned scissor mechanism, the Apple 16 inch MacBook Pro 16 Laptop with Retina Display provides a comfortable and accurate typing experience. MacBook Pro Core i7 9th Gen Laptop ",
+	"Microsoft Surface 7 Pro Laptop in Bangladesh Multi-Touch Surface Pro 7 Platinum Bundle with Platinum Pro Signature Type Cover combines the portability of a tablet with the performance of a laptop. The Type Cover provides a QWERTY keyboard and is made of Alcantara material. Surface Pro 7 utilizes Wi-Fi 6 (802.11ax) and Bluetooth 5.0 for connectivity."
+	];
+	for (let i = 1; i <=7; i++) { // shows 0, then 1, then 2
+	document.getElementById("det"+i).innerHTML = "";
+	}
+	document.getElementById(descnum).innerHTML = description[index];
+}
+</script>
+<body>
+  <div class="Banner">
+	<img src="logo.png" alt="">
+  </div>
+  <div class="blog-posts">
+    <div class="post">
+      <img src="1.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>ASUS ROG Flow X13 GV301QH Gaming Laptop</h3>
+       
+<button onclick="showdesc('det1',0)">See Details</button>
+
+<p id="det1"class="detail"></p>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="2.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>Dell Latitude 7420</h3>
+        <button onclick="showdesc('det2',1)">See Details</button>
+
+<p id="det2"class="detail"></p>
+</script>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="3.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>Xiaomi Mi Game Book Core i7 GTX1060 6GB Graphics 15.6" FHD Gaming Laptop</h3>
+       <button onclick="showdesc('det3',2)">See Details</button>
+</script>
+
+<p id="det3"class="detail"></p>
+
+
+      </div>
+    </div>
+	<div class="post">
+      <img src="4.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>HP 15s-EQ1009AU</h3>
+       <button onclick="showdesc('det4',3)">See Details</button>
+
+<p id="det4"class="detail"></p>
+      </div>
+    </div>
+	<div class="post">
+      <img src="5.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>Lenovo  V15 IIL</h3>
+        <button onclick="showdesc('det5',4)">Click me</button>
+
+<p id="det5"class="detail"></p>
+      </div>
+    </div>
+	<div class="post">
+      <img src="6.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>MacBook Pro 16 Laptop</h3>
+       <button onclick="showdesc('det6',5)">See Details</button>
+
+<p id="det6"class="detail"></p>
+      </div>
+    </div>
+	<div class="post">
+      <img src="7.jpg" alt="" class="post-img">
+      <div class="post-content">
+        <h3>Microsoft Surface 7 Pro</h3>
+       <button onclick="showdesc('det7',6)">See Details</button>
+
+<p id="det7"class="detail"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
